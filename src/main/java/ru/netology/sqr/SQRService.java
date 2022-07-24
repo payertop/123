@@ -2,22 +2,16 @@ package ru.netology.sqr;
 
 public class SQRService {
 
-    public static int main(String[] args) {
+    public int calculate(int limit1, int limit2) {
 
-        for (int i = 10; i < 99; i++) {
-
-            if (i * i > 200)
-                System.out.println(i);
-
-            else if (i * i > 300) {
-                return i;
-
+        int count = 0;
+        for (int num = 10; num <= 99; num++) {
+            if (num * num >= limit1 && num * num <= limit2) {
+                count++;
             }
-
         }
-
-
-        return 0;
+        return count;
     }
 }
+
 
