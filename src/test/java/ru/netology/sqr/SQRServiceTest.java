@@ -2,63 +2,63 @@ package ru.netology.sqr;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SQRServiceTest {
 
-@Test
-void shouldCalculate() {
-    SQRService service = new SQRService();
-    int limit1 = 200;
-    int limit2 = 300;
-    int expected = 3;
+    @Test
+    void shouldCalculate() {
+        SQRService service = new SQRService();
+        int limitMin = 200;
+        int limitMax = 300;
+        int expected = 3;
 
 
-    int actual = service.calculate(limit1, limit2);
+        int actual = service.calculate(limitMin, limitMax);
 
-    assertEquals(actual, expected);
+        assertEquals(expected, actual);
 
-}
+    }
 
     @Test
     void shouldCalculate1() {
         SQRService service = new SQRService();
-        int limit1   = 50;
-        int limit2 = 400;
+        int limitMin = 50;
+        int limitMax = 400;
         int expected = 11;
 
 
-        int actual = service.calculate(limit1, limit2);
+        int actual = service.calculate(limitMin, limitMax);
 
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
 
     }
 
     @Test
     void shouldCalculate2() {
         SQRService service = new SQRService();
-        int limit1 = 2100;
-        int limit2 = 2600;
+        int limitMin = 2100;
+        int limitMax = 2600;
         int expected = 5;
 
 
-        int actual = service.calculate(limit1, limit2);
+        int actual = service.calculate(limitMin, limitMax);
 
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
 
     }
 
     @Test
     void shouldCalculate3() {
         SQRService service = new SQRService();
-        int limit1  = 3500;
-        int limit2 = 4400;
+        int limitMin = 3500;
+        int limitMax = 4400;
         int expected = 7;
 
 
-        int actual = service.calculate(limit1, limit2);
+        int actual = service.calculate(limitMin, limitMax);
 
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
 
     }
 }
