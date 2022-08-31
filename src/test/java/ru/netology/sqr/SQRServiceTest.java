@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class SQRServiceTest {
 
     @Test
-    void shouldCalculate() {
+    void shouldCalculateFromLimitMinToLimitMax() {
         SQRService service = new SQRService();
         int limitMin = 200;
         int limitMax = 300;
@@ -21,7 +21,7 @@ class SQRServiceTest {
     }
 
     @Test
-    void shouldCalculate1() {
+    void shouldCalculateFromLimitMinToLimitMax1() {
         SQRService service = new SQRService();
         int limitMin = 50;
         int limitMax = 400;
@@ -35,7 +35,7 @@ class SQRServiceTest {
     }
 
     @Test
-    void shouldCalculate2() {
+    void shouldCalculateFromLimitMinToLimitMax2() {
         SQRService service = new SQRService();
         int limitMin = 2100;
         int limitMax = 2600;
@@ -49,7 +49,7 @@ class SQRServiceTest {
     }
 
     @Test
-    void shouldCalculate3() {
+    void shouldCalculateFromLimitMinToLimitMax3() {
         SQRService service = new SQRService();
         int limitMin = 3500;
         int limitMax = 4400;
